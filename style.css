@@ -26,11 +26,15 @@ main {
   margin-top: 3.5rem;
   background-color: var(--lightestblue);
 }
+#Hero {
+  padding-top: 4rem;
+}
 .hero {
   display: flex;
   align-items: center;
   background-color: var(--darkestblue);
   border-radius: 20px;
+  max-width: 1042px;
 }
 .hero > div {
   padding: 2rem 4rem;
@@ -225,6 +229,9 @@ main {
   grid-column: span 2;
 }
 @media screen and (max-width: 500px) {
+  #Hero {
+    padding-top: 1rem;
+  }
   .hero {
     flex-direction: column;
     align-items: center;
@@ -234,6 +241,33 @@ main {
   .hero > div {
     padding: 2rem 2rem;
     max-width: 100%;
+  }
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .o1 {
+    order: 1;
+  }
+  .o2 {
+    order: 2;
+  }
+  .o3 {
+    order: 3;
+  }
+  .o4 {
+    order: 4;
+  }
+  .o5 {
+    order: 5;
+  }
+  .o6 {
+    order: 6;
+  }
+  .eldc {
+    grid-template-columns: 1fr;
   }
   .grid-container {
     display: flex;
@@ -247,7 +281,7 @@ main {
     flex-wrap: nowrap;
   }
 }
-@media (width< 700px) {
+@media screen and (max-width: 700px) {
   .howitem {
     flex-basis: calc(40% - 0rem);
     border-radius: 20px;
