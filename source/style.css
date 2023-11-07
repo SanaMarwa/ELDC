@@ -1,0 +1,256 @@
+:root {
+  --lightestblue: #edfafd;
+  --lighterblue: #daf5fb;
+  --lightblue: #429ebd;
+  --darkbue: #053f5c;
+  --darkestblue: #010f16;
+  --yellow: #f2c94c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Lato", sans-serif; */
+}
+header {
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+.max-w {
+  max-width: 1042px;
+}
+main {
+  margin-top: 3.5rem;
+  background-color: var(--lightestblue);
+}
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: var(--darkestblue);
+  border-radius: 20px;
+}
+.hero > div {
+  padding: 2rem 4rem;
+  max-width: 60%;
+}
+#Hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.accent {
+  color: var(--yellow);
+}
+.sec-gap-b {
+  padding-bottom: 4rem;
+}
+.grid1 {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.g-item {
+  border-radius: 20px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Features h2 {
+  font-weight: 900;
+}
+.features {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.ft {
+  border-radius: 20px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* text-align: center; */
+}
+.ft ul {
+  padding-left: 1rem;
+}
+.ft li {
+  padding-bottom: 0.5rem;
+}
+#Testimonials {
+  min-height: 200px;
+}
+
+.eldc {
+  max-width: 1042px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 20px;
+  gap: 1rem;
+}
+.eldc-i {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.eldc h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.mid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bg {
+  max-width: 1042px;
+  margin: 0 1rem;
+}
+.col {
+  background-color: aqua;
+}
+
+.grid-container {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(2fr, auto) minmax(repeat(4, 400px), auto) auto;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.grid-item {
+  border-radius: 20px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.grid-item h2 {
+  font-weight: 900;
+  font-size: xx-large;
+}
+.head {
+  grid-column: span 2;
+  background-color: var(--lighterblue);
+}
+.bottom {
+  text-align: center;
+  grid-column: span 2;
+  background-color: var(--darkbue);
+  padding: 1rem;
+  color: white;
+}
+.c0 {
+  background-color: var(--lighterblue);
+  color: #053f5c;
+}
+.c1 {
+  background-color: var(--darkbue);
+  color: white;
+}
+.c2 {
+  background-color: var(--lightblue);
+  color: #053f5c;
+  color: var(--darkestblue);
+  /* color: black; */
+}
+
+.c3 {
+  background-color: var(--yellow);
+  color: var(--darkestblue);
+}
+.c4 {
+  background-color: var(--darkestblue);
+  color: #f5deb3;
+}
+.icon {
+  border-radius: 20px;
+}
+.icon img {
+  width: 100%;
+}
+#How {
+  padding: 4rem 0;
+  text-align: center;
+}
+.how {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.howitem {
+  flex-basis: calc(33.33% - 1.67rem);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+.enroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enroll div {
+  border-radius: 20px;
+}
+.enroll-block {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+/* Levels page */
+.grid-container-l {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, (1fr minmax(400px, auto) 1fr));
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.grid-container-l .grid-item {
+  padding: 2rem;
+}
+.arrow {
+  grid-column: span 2;
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkestblue);
+    border-radius: 20px;
+  }
+  .hero > div {
+    padding: 2rem 2rem;
+    max-width: 100%;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item {
+    padding: 1rem;
+  }
+  .how {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@media (width< 700px) {
+  .howitem {
+    flex-basis: calc(40% - 0rem);
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+}
