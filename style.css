@@ -74,6 +74,9 @@ main {
 }
 #Features h3 {
   font-weight: 700;
+  font-weight: 700;
+  font-size: 1.75rem;
+  /* padding-left: 1rem; */
 }
 .features {
   max-width: 1024px;
@@ -273,6 +276,9 @@ main {
   }
   .features {
     grid-template-columns: 1fr;
+  }
+  #Features h3 {
+    padding-left: 1rem;
   }
   .o1 {
     order: 1;
