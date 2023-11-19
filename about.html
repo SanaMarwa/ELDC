@@ -30,6 +30,8 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+
     <title>About</title>
   </head>
   <body>
@@ -70,19 +72,22 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                   <li class="nav-item nav-i">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item nav-i">
                     <a
                       class="nav-link active"
                       aria-current="page"
-                      href="index.html"
-                      >Home</a
+                      href="about.html"
+                      >About</a
                     >
                   </li>
                   <li class="nav-item nav-i">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="levels.html">Levels</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    
-                  </li> -->
+                  <li class="nav-item nav-i">
+                    <a class="nav-link" href="">Contact</a>
+                  </li>
                 </ul>
                 <div>
                   <a
@@ -103,7 +108,7 @@
     <main>
       <section id="About" class="mid">
         <div class="grid-container bg">
-          <div class="grid-item head text-center">
+          <div class="grid-item head text-center hidden">
             <h1 class="display-4">
               Empowering Students for Success and Beyond
             </h1>
@@ -115,8 +120,10 @@
               to meet the specific needs and aspirations of each individual.
             </p>
           </div>
-          <div class="grid-item c1 icon"><img src="./images/1.png" /></div>
-          <div class="grid-item c1">
+          <div class="grid-item c1 icon hidden">
+            <img src="./images/1.png" />
+          </div>
+          <div class="grid-item c1 hidden">
             <h2>Individual Attention:</h2>
             <p>
               We understand the importance of individual attention in the
@@ -127,7 +134,7 @@
               student's pace and learning style.
             </p>
           </div>
-          <div class="grid-item c2">
+          <div class="grid-item c2 hidden">
             <h2>Continuous Evaluation:</h2>
             <p>
               We implement a robust system of individual evaluation. Regular
@@ -137,9 +144,13 @@
               continuously adjusted to maximize their potential.
             </p>
           </div>
-          <div class="grid-item c2 icon"><img src="./images/2.png" /></div>
-          <div class="grid-item c3 icon"><img src="./images/3.png" /></div>
-          <div class="grid-item c3">
+          <div class="grid-item c2 icon hidden">
+            <img src="./images/2.png" />
+          </div>
+          <div class="grid-item c3 icon hidden">
+            <img src="./images/3.png" />
+          </div>
+          <div class="grid-item c3 hidden">
             <h2>Enhancing Creativity:</h2>
             <p>
               We nurture creativity and critical thinking. Our curriculum
@@ -148,7 +159,7 @@
               their thoughts.
             </p>
           </div>
-          <div class="grid-item c4">
+          <div class="grid-item c4 hidden">
             <h2>Building Confidence:</h2>
             <p>
               Effective communication is not just about words; it's about
@@ -157,19 +168,21 @@
               clarity and conviction.
             </p>
           </div>
-          <div class="grid-item c4 icon"><img src="./images/4.png" /></div>
-          <div class="grid-item c0 bottom">
+          <div class="grid-item c4 icon hidden">
+            <img src="./images/4.png" />
+          </div>
+          <div class="grid-item c0 bottom hidden">
             <h2>DURATION</h2>
             <p>The program runs for 4 months, 5 days a week.</p>
           </div>
         </div>
       </section>
 
-      <section id="How" class="mid">
+      <section id="How" class="mid hidden">
         <div class="bg">
           <h2>How We Foster Effective Learning</h2>
           <div class="how">
-            <div class="howitem c2">
+            <div class="howitem c2 hidden" style="--order: 1">
               <h3>Structured Curriculum:</h3>
               <p>
                 Our program offers a well-structured curriculum for each level,
@@ -177,7 +190,7 @@
                 and vital life skills.
               </p>
             </div>
-            <div class="howitem c2">
+            <div class="howitem c2 hidden" style="--order: 2">
               <h3>Interactive Classes:</h3>
               <p>
                 Our live classes are designed to facilitate engagement and
@@ -185,7 +198,7 @@
                 questions, and collaborate with their peers.
               </p>
             </div>
-            <div class="howitem c2">
+            <div class="howitem c2 hidden" style="--order: 3">
               <h3>Hands-on Activities:</h3>
               <p>
                 Learning by doing is the most effective method. Our program
@@ -193,7 +206,7 @@
                 encourage students to apply what they've learned.
               </p>
             </div>
-            <div class="howitem c2">
+            <div class="howitem c2 hidden" style="--order: 4">
               <h3>Feedback and Improvement:</h3>
               <p>
                 Regular assessments and individual evaluations provide students
@@ -201,7 +214,7 @@
                 parents and students to set goals and track progress.
               </p>
             </div>
-            <div class="howitem c2">
+            <div class="howitem c2 hidden" style="--order: 5">
               <h3>Adaptive Learning:</h3>
               <p></p>
               We adapt our teaching methods to accommodate the unique strengths
@@ -212,7 +225,7 @@
         </div>
       </section>
 
-      <section class="mid enroll pb-4">
+      <section class="mid enroll pb-4 hidden">
         <div class="bg text-center">
           <h2 class="display-4">It all starts HERE</h2>
           <p>

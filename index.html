@@ -30,6 +30,7 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script> 
     <title>ELDC</title>
   </head>
   <body>
@@ -96,7 +97,7 @@
       </header>
     </section>
 <main>
-    <section id="Hero" class="mid sec-gap-b">
+    <section id="Hero" class="mid sec-gap-b hidden">
         <div class="hero bg text-white">
           <div class=" text-left">
             <h1 class="">
@@ -111,12 +112,12 @@
         </div>
       </section>
 
-    <section id="About" class="sec-gap-b mid mx-3">
+    <section id="About" class="sec-gap-b mid mx-3 hidden">
       <div class="grid1">
-        <div class="g-item icon c0">
+        <div class="g-item icon c0 hidden">
           <img src="./images/about.jpg">
         </div>
-        <div class="g-item c3">
+        <div class="g-item c3 hidden">
           <h2 class="display-6">Empowering Students to Excel in English and Beyond</h2>
           <p>At [Program Name], we understand that effective learning is the key to success. Our program is designed to equip students in grade 3 and above with reading, writing, speaking and presentation skills they need to succeed in the modern world.</p>
           <p>Our remote platform allows us to reach students around the world, breaking down geographical     barriers and providing access to education from the comfort of home.</p>
@@ -125,23 +126,23 @@
       </div>
     </section>
 
-    <section id="Features" class="sec-gap-b">
+    <section id="Features" class="sec-gap-b hidden">
       <div class="mid mx-3 ">
       <h2 class="text-center">FEATURES</h2>
       <div class="features">
-        <div class="ft icon c2 o1"><img src="./images/ftlevel.png"></div>
-        <div class="ft icon c1 o3"><img src="./images/ftlive.png"></div>
-        <div class="ft icon c4 o5"><img src="./images/fteval.png"></div>
+        <div class="ft icon c2 o1 hidden" style="--order: 1;"><img src="./images/ftlevel.png"></div>
+        <div class="ft icon c1 o3 hidden" style="--order: 2;"><img src="./images/ftlive.png"></div>
+        <div class="ft icon c4 o5 hidden" style="--order: 3;"><img src="./images/fteval.png"></div>
 
-        <div class="ft c2 o2"><h3>Level Progression</h3><p><ul class="list-group"><li>Structured curriculum and hands-on activities.</li>
+        <div class="ft c2 o2 hidden" style="--order: 1;"><h3>Level Progression</h3><p><ul class="list-group"><li>Structured curriculum and hands-on activities.</li>
           <li>Developing crucial skills in reading, writing, speaking, and critical thinking level-by-level.</li>
           <li>Students unlock new challenges and opportunities, fostering a sense of accomplishment.</li>
           </ul></p></div>
-        <div class="ft c1 o4"><h3>Live Mentor Support & Classes</h3><p><ul><li>Dedicated mentors for personalized guidance, goal setting, regular check-ins.</li>
+        <div class="ft c1 o4 hidden" style="--order: 2;"><h3>Live Mentor Support & Classes</h3><p><ul><li>Dedicated mentors for personalized guidance, goal setting, regular check-ins.</li>
           <li>Engage in real-time interactive sessions, five days a week.</li>
           <li>Elimination of parent's involvement or homework through live practice sessions.</li>
           </p></div>
-        <div class="ft c4 o6"><h3>Individual Evaluation</h3><p><ul><li>Regular assessments, in-depth feedback.</li>
+        <div class="ft c4 o6 hidden" style="--order: 3;"><h3>Individual Evaluation</h3><p><ul><li>Regular assessments, in-depth feedback.</li>
           <li>Identify strengths and areas for improvement.</li>
           <li>Detailed progress reports to track growth.</li>
           </p></div>
@@ -152,7 +153,7 @@
 
     
 
-    <section id="ELDC" class="mid ">
+    <section id="ELDC" class="mid hidden">
       <div class="eldc bg">
         <div class="c0 icon eldc-i">
           <!-- <img src="./images/eldc-i1.png" > -->
@@ -164,7 +165,7 @@
     </div>
     </section>
 
-    <section id="Testimonials" class="mid" data-bs-theme=dark>
+    <section id="Testimonials" class="mid hidden" data-bs-theme=dark>
       
         <div id="carouselExampleDark" class=" bg  carousel carousel-dark slide">
           <div class="carousel-indicators">

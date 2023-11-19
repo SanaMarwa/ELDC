@@ -30,6 +30,8 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+
     <title>ELDC-Levels</title>
   </head>
   <body>
@@ -70,19 +72,22 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                   <li class="nav-item nav-i">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="index.html"
-                      >Home</a
-                    >
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item nav-i">
                     <a class="nav-link" href="about.html">About</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    
-                  </li> -->
+                  <li class="nav-item nav-i">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="levels.html"
+                      >Levels</a
+                    >
+                  </li>
+                  <li class="nav-item nav-i">
+                    <a class="nav-link" href="">Contact</a>
+                  </li>
                 </ul>
                 <div>
                   <a
@@ -101,7 +106,7 @@
     </section>
 
     <main>
-      <section id="Hero" class="mid sec-gap-b">
+      <section id="Hero" class="mid sec-gap-b hidden">
         <div class="hero bg text-white">
           <div class="text-left">
             <h1 class="">ELDC - Unlocking the Power of Education</h1>
@@ -118,12 +123,14 @@
       <section id="About" class="mid sec-gap-b">
         <div class="grid-container-l bg">
           <!-- L1 -->
-          <div class="grid-item head text-center">
+          <div class="grid-item head text-center hidden">
             <h1 class="display-4">LEVEL - 1</h1>
             <p>Reading Capability</p>
           </div>
-          <div class="grid-item c1 icon"><img src="./images/l1.png" /></div>
-          <div class="grid-item c1">
+          <div class="grid-item c1 icon hidden">
+            <img src="./images/l1.png" />
+          </div>
+          <div class="grid-item c1 hidden">
             <h2>Building Strong Foundations:</h2>
             <p>
               Start your child's educational journey by mastering reading
@@ -132,13 +139,15 @@
             </p>
           </div>
 
-          <div class="arrow mid"><img src="./images/level-arrow.png" /></div>
+          <div class="arrow mid hidden">
+            <img src="./images/level-arrow.png" />
+          </div>
           <!-- L2 -->
-          <div class="grid-item head text-center">
+          <div class="grid-item head text-center hidden">
             <h1 class="display-4">LEVEL - 2</h1>
             <p>Visualizing Concepts</p>
           </div>
-          <div class="grid-item c2">
+          <div class="grid-item c2 hidden">
             <h2>Unleashing Creativity:</h2>
             <p>
               At this level, your child will learn to convert their
@@ -147,16 +156,22 @@
               that vividly showcase their comprehension.
             </p>
           </div>
-          <div class="grid-item c2 icon"><img src="./images/l2.png" /></div>
+          <div class="grid-item c2 icon hidden">
+            <img src="./images/l2.png" />
+          </div>
 
-          <div class="arrow mid"><img src="./images/level-arrow.png" /></div>
+          <div class="arrow mid hidden">
+            <img src="./images/level-arrow.png" />
+          </div>
           <!-- L3 -->
-          <div class="grid-item head text-center">
+          <div class="grid-item head text-center hidden">
             <h1 class="display-4">LEVEL - 3</h1>
             <p>Speaking Skills</p>
           </div>
-          <div class="grid-item c3 icon"><img src="./images/l3.png" /></div>
-          <div class="grid-item c3">
+          <div class="grid-item c3 icon hidden">
+            <img src="./images/l3.png" />
+          </div>
+          <div class="grid-item c3 hidden">
             <h2>Captivating Audiences:</h2>
             <p>
               Take your child's communication skills to the next level by
@@ -166,13 +181,15 @@
             </p>
           </div>
 
-          <div class="arrow mid"><img src="./images/level-arrow.png" /></div>
+          <div class="arrow mid hidden">
+            <img src="./images/level-arrow.png" />
+          </div>
           <!-- L4 -->
-          <div class="grid-item head text-center">
+          <div class="grid-item head text-center hidden">
             <h1 class="display-4">LEVEL - 4</h1>
             <p>Writing Proficiency</p>
           </div>
-          <div class="grid-item c4">
+          <div class="grid-item c4 hidden">
             <h2>Expressing Ideas with Precision:</h2>
             <p>
               Expressing Ideas with Precision: Once your child has conquered
@@ -181,11 +198,13 @@
               concise written communication.
             </p>
           </div>
-          <div class="grid-item c4 icon"><img src="./images/l4.png" /></div>
+          <div class="grid-item c4 icon hidden">
+            <img src="./images/l4.png" />
+          </div>
         </div>
       </section>
 
-      <section class="mid enroll pb-4">
+      <section class="mid enroll hidden sec-gap-b">
         <div class="bg text-center">
           <h2 class="display-4">It all starts HERE</h2>
           <p>
@@ -195,13 +214,13 @@
             modern world.
           </p>
         </div>
-        <div class="bg text-center my-4 c3 p-4">
+        <div class="bg text-center my-4 c3 p-4 hidden">
           <p class="enroll-block">
             Join us in this journey of discovery, growth, and empowerment.
             Unlock your child's potential with [Program Name] today.
           </p>
         </div>
-        <button type="button" class="btn btn-warning">Enroll Now</button>
+        <button type="button" class="btn btn-warning hidden">Enroll Now</button>
       </section>
     </main>
 
