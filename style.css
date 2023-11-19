@@ -5,6 +5,7 @@
   --darkbue: #053f5c;
   --darkestblue: #010f16;
   --yellow: #f2c94c;
+  --bs-navbar-active-color: rgba(var(--darkbue), 1);
 }
 * {
   margin: 0;
@@ -19,6 +20,11 @@ header {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
     inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
+.nav-i {
+  font-weight: 600;
+  color: var(--darkbue);
+}
+
 .max-w {
   max-width: 1042px;
 }
@@ -66,6 +72,9 @@ main {
 #Features h2 {
   font-weight: 900;
 }
+#Features h3 {
+  font-weight: 700;
+}
 .features {
   max-width: 1024px;
   display: grid;
@@ -84,9 +93,11 @@ main {
 }
 .ft ul {
   padding-left: 1rem;
+  list-style: square;
 }
 .ft li {
   padding-bottom: 0.5rem;
+  font-weight: 500;
 }
 #Testimonials {
   min-height: 200px;
@@ -228,7 +239,18 @@ main {
 .arrow {
   grid-column: span 2;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  .nav-link {
+    text-align: center;
+  }
+  .nav-btn {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-right: 1rem;
+  }
+  @media screen and (max-width: 500px) {
+  }
   #Hero {
     padding-top: 1rem;
   }
@@ -279,6 +301,10 @@ main {
   .how {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+  .grid-container-l {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 700px) {
