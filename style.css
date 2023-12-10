@@ -5,10 +5,10 @@ html {
   --lightestblue: #edfafd;
   --lighterblue: #daf5fb;
   --lightblue: #429ebd;
-  --darkbue: #053f5c;
+  --darkblue: #053f5c;
   --darkestblue: #010f16;
   --yellow: #f2c94c;
-  --bs-navbar-active-color: rgba(var(--darkbue), 1);
+  --bs-navbar-active-color: rgba(var(--darkblue), 1);
 }
 * {
   margin: 0;
@@ -25,7 +25,7 @@ header {
 }
 .nav-i {
   font-weight: 600;
-  color: var(--darkbue);
+  color: var(--darkblue);
 }
 
 .max-w {
@@ -71,6 +71,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
+}
+.intro-small {
+  /* height: 100px; */
+  width: 200px !important;
+  align-self: center;
+}
+#About h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
 }
 #Features h2 {
   font-weight: 900;
@@ -128,6 +138,10 @@ main {
   font-size: 2.5rem;
   font-weight: 900;
 }
+#Founders .eldc {
+  grid-template-columns: 1fr 2fr;
+}
+
 .mid {
   display: flex;
   justify-content: center;
@@ -162,6 +176,7 @@ main {
 #About .grid-item h2 {
   font-weight: 900;
   font-size: xx-large;
+  padding-bottom: 1.5rem;
 }
 .head {
   grid-column: span 2;
@@ -170,7 +185,7 @@ main {
 .bottom {
   text-align: center;
   grid-column: span 2;
-  background-color: var(--darkbue);
+  background-color: var(--darkblue);
   padding: 1rem;
   color: white;
 }
@@ -179,7 +194,7 @@ main {
   color: #053f5c;
 }
 .c1 {
-  background-color: var(--darkbue);
+  background-color: var(--darkblue);
   color: white;
 }
 .c2 {
@@ -197,11 +212,44 @@ main {
   background-color: var(--darkestblue);
   color: #f5deb3;
 }
+.btn {
+  /* --bs-btn-font-weight: 600; */
+  /* --bs-btn-color: var(--bs-white); */
+  /* --bs-btn-bg: var(--bd-violet-bg); */
+  /* --bs-btn-border-color: var(--bd-violet-bg); */
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: var(--darkblue);
+  --bs-btn-hover-border-color: white;
+}
 .icon {
   border-radius: 20px;
 }
 .icon img {
   width: 100%;
+}
+#AboutFounders .eldc {
+  grid-template-columns: repeat(6, 1fr);
+}
+.f {
+  grid-column: span 4;
+}
+.fi {
+  grid-column: span 2;
+}
+#AboutFounders h2 {
+  color: #010f16;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#AboutFounders h3 {
+  font-weight: 600;
+}
+#AboutFounders h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.f-content {
+  grid-column: span 3;
 }
 #How {
   padding: 4rem 0;
@@ -290,7 +338,7 @@ main {
 }
 footer {
   display: flex;
-  background-color: wheat;
+  background: linear-gradient(white, var(--lightestblue), white);
   /* height: 300px; */
   width: 100%;
   justify-content: center;
@@ -306,7 +354,7 @@ footer {
   width: 100%;
   /* max-width: 1042px; */
   justify-content: space-between;
-  border-top: solid var(--darkbue) 2px;
+  border-top: solid var(--darkblue) 2px;
   padding-top: 2rem;
 }
 .footer-item {
@@ -366,11 +414,26 @@ footer {
   .grid1 {
     grid-template-columns: 1fr;
   }
+  .g-item {
+    padding: 5%;
+    text-align: center;
+    padding-top: 10%;
+  }
+  #About h2 {
+    font-weight: 800;
+    font-size: 1.75rem;
+  }
+  #About .grid-item h2 {
+    padding-bottom: 0rem;
+  }
   .features {
     grid-template-columns: 1fr;
   }
   #Features h3 {
     padding-left: 1rem;
+  }
+  .o-1 {
+    order: -1;
   }
   .o1 {
     order: 1;
@@ -392,6 +455,24 @@ footer {
   }
   .eldc {
     grid-template-columns: 1fr;
+  }
+  .eldc-i {
+    padding: 5%;
+  }
+  #Founders .eldc {
+    grid-template-columns: 1fr;
+  }
+  #AboutFounders .eldc {
+    grid-template-columns: 1fr;
+  }
+  .f {
+    grid-column: span 1;
+  }
+  .fi {
+    grid-column: span 1;
+  }
+  .f-content {
+    grid-column: span 1;
   }
   .grid-container {
     display: flex;
