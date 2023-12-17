@@ -27,7 +27,9 @@ header {
   font-weight: 600;
   color: var(--darkblue);
 }
-
+.logo {
+  height: 50px;
+}
 .max-w {
   max-width: 1042px;
 }
@@ -90,6 +92,7 @@ main {
   font-weight: 700;
   font-weight: 700;
   font-size: 1.75rem;
+  padding-bottom: 1rem;
   /* padding-left: 1rem; */
 }
 .features {
@@ -111,6 +114,7 @@ main {
 .ft ul {
   padding-left: 1rem;
   list-style: square;
+  margin-bottom: 0;
 }
 .ft li {
   padding-bottom: 0.5rem;
@@ -517,6 +521,7 @@ footer {
   .features {
     grid-template-columns: 1fr;
   }
+
   #Features h3 {
     padding-left: 1rem;
   }
