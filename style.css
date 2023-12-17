@@ -27,14 +27,23 @@ header {
   font-weight: 600;
   color: var(--darkblue);
 }
+.container-fluid {
+  --bs-gutter-x: 0;
+}
 .logo {
   height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--darkestblue);
 }
 .max-w {
   max-width: 1042px;
 }
 main {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   background-color: var(--lightestblue);
 }
 #Hero {
@@ -84,7 +93,8 @@ main {
   font-weight: 800;
   font-size: 2.5rem;
 }
-#Features h2 {
+#Features h2,
+#FAQs .h2 {
   font-weight: 900;
   font-size: 2.5rem;
 }
@@ -146,7 +156,7 @@ main {
   width: 100%;
   text-align: center;
 }
-#FAQs .h2,
+
 .h2 {
   font-weight: 900;
   font-size: calc(1.475rem + 2.7vw);
@@ -597,6 +607,12 @@ footer {
     flex-basis: calc(40% - 0rem);
     border-radius: 20px;
     padding: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 /* animation */
