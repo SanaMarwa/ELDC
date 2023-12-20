@@ -601,6 +601,9 @@ footer {
     flex-direction: column;
     display: flex;
   }
+  .intro-logo {
+    padding-top: 5%;
+  }
 }
 @media screen and (max-width: 700px) {
   .howitem {
