@@ -611,6 +611,12 @@ footer {
     border-radius: 20px;
     padding: 1.5rem;
   }
+  .logo {
+    margin-right: 0;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
@@ -618,6 +624,17 @@ footer {
     justify-content: center;
   }
 }
+@media (width < 351px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+/* @media (width < 351px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+} */
+
 /* animation */
 .hidden {
   opacity: 0;
